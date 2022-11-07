@@ -1,0 +1,46 @@
+@use "../custom" as *;
+@use "../components/mixin" as *;
+
+.services {
+  padding: 3.125rem 15.25rem;
+  text-align: center;
+
+  &--yellow {
+    @include switchColor($yellow);
+  }
+  &--primary {
+    @include switchColor($primary);
+  }
+  &--primary-border {
+    @include makeBorder($primary);
+  }
+  &--grey-border {
+    @include makeBorder($secondary);
+  }
+
+  h2 {
+    color: #999b9a;
+    font-weight: 600;
+    font-size: 3.125rem;
+    line-height: 3.75rem;
+    padding-bottom: 3.125rem;
+  }
+  svg {
+    width: 4.0625rem;
+    height: 4.0625rem;
+    margin-bottom: 1.875rem;
+
+    padding: 1rem;
+    border-radius: 50%;
+  }
+  hr {
+    width: 2.2rem;
+    margin: 0 auto;
+    border-radius: 20%;
+  }
+  h6 {
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 1.2rem;
+  }
+}

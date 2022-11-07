@@ -1,0 +1,22 @@
+@use "../custom" as *;
+
+@mixin switchColor($color) {
+  svg {
+    background-color: $color;
+    border: 0.0625rem solid $color;
+  }
+  hr {
+    border: 0.1875rem solid $color;
+  }
+}
+
+@mixin makeBorder($color) {
+  svg {
+    background-color: #f5f5f5;
+    border: 0.1875rem solid $color;
+    color: $color;
+  }
+  hr {
+    border: 0.1875rem solid $color;
+  }
+}

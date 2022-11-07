@@ -1,12 +1,14 @@
+// customized bootstrap
 @use "custom";
-@use "typography";
 
-html {
-  box-sizing: border-box;
-  font-size: 100%;
-}
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
+// import components
+@use "components/typography";
+@use "components/boilerplate";
+
+// import layouts
+@use "layout/about-your-project";
+@use "layout/footer";
+@use "layout/header";
+@use "layout/instructional-design";
+@use "layout/services";
+@use "layout/we-design-learning";
