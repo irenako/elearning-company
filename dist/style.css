@@ -11014,6 +11014,47 @@ body {
   margin-bottom: 3.875rem;
 }
 
+.footer {
+  background-color: #414141;
+}
+.footer .footer__menu {
+  width: 66%;
+  color: #929292;
+  margin: 0 auto;
+  padding: 4.0625rem 0;
+}
+.footer .footer__menu h6 {
+  padding-top: 3.625rem;
+  text-align: start;
+  font-weight: 300;
+  font-size: 0.75rem;
+  line-height: 0.875rem;
+}
+.footer .footer__menu--list {
+  list-style: none;
+}
+.footer .footer__menu--list a,
+.footer .footer__menu--list a:visited {
+  color: #929292;
+  text-decoration: none;
+  font-weight: 300;
+  font-size: 0.875rem;
+  line-height: 1.0625rem;
+}
+
+.footer__bottom {
+  background-color: #383838;
+  line-height: 1.0625rem;
+  height: 4.327rem;
+}
+.footer__bottom p {
+  text-align: center;
+  color: #595959;
+  font-weight: 300;
+  font-size: 0.875rem;
+  padding: 1.6875rem 0;
+}
+
 .header__menu {
   background-image: url("../../images/background-menu.png");
   max-width: 1440px;
@@ -11117,6 +11158,9 @@ body {
 .services--yellow .services__break {
   border: 0.1875rem solid #dccd8f;
 }
+.services--primary {
+  padding-top: 4.6875rem;
+}
 .services--primary .icon {
   background-color: #3d948e;
   border: 0.0625rem solid #3d948e;
@@ -11124,6 +11168,9 @@ body {
 }
 .services--primary .services__break {
   border: 0.1875rem solid #3d948e;
+}
+.services--primary-border {
+  padding-top: 4.6875rem;
 }
 .services--primary-border svg {
   background-color: #f5f5f5;
@@ -11133,6 +11180,9 @@ body {
 }
 .services--primary-border .services__break {
   border: 0.1875rem solid #3d948e;
+}
+.services--grey-border {
+  padding-top: 4.6875rem;
 }
 .services--grey-border svg {
   background-color: #f5f5f5;

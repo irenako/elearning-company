@@ -1,0 +1,42 @@
+@use "../custom" as *;
+
+.footer {
+  background-color: #414141;
+
+  .footer__menu {
+    width: 66%;
+    color: #929292;
+    margin: 0 auto;
+    padding: 4.0625rem 0;
+    h6 {
+      padding-top: 3.625rem;
+      text-align: start;
+      font-weight: 300;
+      font-size: 0.75rem;
+      line-height: 0.875rem;
+    }
+    &--list {
+      list-style: none;
+      a,
+      a:visited {
+        color: #929292;
+        text-decoration: none;
+        font-weight: 300;
+        font-size: 0.875rem;
+        line-height: 1.0625rem;
+      }
+    }
+  }
+}
+.footer__bottom {
+  background-color: #383838;
+  line-height: 1.0625rem;
+  height: 4.327rem;
+  p {
+    text-align: center;
+    color: #595959;
+    font-weight: 300;
+    font-size: 0.875rem;
+    padding: 1.6875rem 0;
+  }
+}

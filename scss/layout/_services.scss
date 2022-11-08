@@ -9,12 +9,15 @@
     @include switchColor($yellow);
   }
   &--primary {
+    padding-top: 4.6875rem;
     @include switchColor($primary);
   }
   &--primary-border {
+    padding-top: 4.6875rem;
     @include makeBorder($primary);
   }
   &--grey-border {
+    padding-top: 4.6875rem;
     @include makeBorder($secondary);
   }
 
