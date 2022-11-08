@@ -10947,6 +10947,73 @@ body {
   font-family: MuseoSansCyrl;
 }
 
+.talk-to-us {
+  text-align: center;
+  align-items: center;
+  color: #ffffff;
+}
+.talk-to-us h2 {
+  font-weight: 600;
+  font-size: 3.125rem;
+  line-height: 7.75rem;
+  padding-top: 3.125rem;
+  padding-bottom: 1.875rem;
+}
+.talk-to-us p {
+  font-weight: 300;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  padding-bottom: 3.75rem;
+}
+.talk-to-us .talk-to-us__form {
+  text-align: center;
+  align-items: center;
+}
+.talk-to-us .talk-to-us__form input {
+  width: 27rem;
+  display: inline-block;
+  background-color: #41a297;
+  border: 0.0625rem solid #41a297;
+  border-radius: 1.71875rem;
+  color: #ffffff;
+  margin-bottom: 1.2rem;
+  padding: 0.9375rem;
+}
+.talk-to-us .talk-to-us__form input::-moz-placeholder {
+  padding-left: 0.3125rem;
+  color: #ffffff;
+  font-weight: 300;
+  line-height: 1.2rem;
+  font-size: 1rem;
+}
+.talk-to-us .talk-to-us__form input:-ms-input-placeholder {
+  padding-left: 0.3125rem;
+  color: #ffffff;
+  font-weight: 300;
+  line-height: 1.2rem;
+  font-size: 1rem;
+}
+.talk-to-us .talk-to-us__form input::placeholder {
+  padding-left: 0.3125rem;
+  color: #ffffff;
+  font-weight: 300;
+  line-height: 1.2rem;
+  font-size: 1rem;
+}
+.talk-to-us .talk-to-us__form .input--message {
+  padding-bottom: 8.125rem;
+}
+.talk-to-us .talk-to-us__form button {
+  padding: 1rem 5rem;
+  border: 0.1875rem solid #ffffff;
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  border-radius: 1.71875rem;
+  margin-top: 2.125rem;
+  margin-bottom: 3.875rem;
+}
+
 .header__menu {
   background-image: url("../../images/background-menu.png");
   max-width: 1440px;
