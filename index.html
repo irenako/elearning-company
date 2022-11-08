@@ -5,17 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="dist/style.css" />
+    
     <title>Document</title>
   </head>
   <body>
+    <!-- SVG Sprite -->
+<svg width="0" height="0" class="hidden" >
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="person-fill">
+    <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="pc-display">
+    <path d="M8 1a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1V1Zm1 13.5a.5.5 0 1 0 1 0 .5.5 0 0 0-1 0Zm2 0a.5.5 0 1 0 1 0 .5.5 0 0 0-1 0ZM9.5 1a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5ZM9 3.5a.5.5 0 0 0 .5.5h5a.5.5 0 0 0 0-1h-5a.5.5 0 0 0-.5.5ZM1.5 2A1.5 1.5 0 0 0 0 3.5v7A1.5 1.5 0 0 0 1.5 12H6v2h-.5a.5.5 0 0 0 0 1H7v-4H1.5a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .5-.5H7V2H1.5Z"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="list-check">
+    <path d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3.854 2.146a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708L2 3.293l1.146-1.147a.5.5 0 0 1 .708 0zm0 4a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708L2 7.293l1.146-1.147a.5.5 0 0 1 .708 0zm0 4a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 0 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0z"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="phone-landscape">
+    <path d="M1 4.5a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v6a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-6zm-1 6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-6a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v6z"></path>
+    <path d="M14 7.5a1 1 0 1 0-2 0 1 1 0 0 0 2 0z"></path>
+  </symbol>
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 34 24" id="tick">
+    <path d="M4 10.5L12.8037 19.3037C13.19 19.69 13.8148 19.6948 14.2069 19.3145L30 4" stroke="#E7D08C" stroke-width="7" stroke-linecap="round"></path>
+  </symbol>
+</svg>
     <!-- HEADER -->
     <div class="header">
       <div class="header__menu">
         <div class="container">
           <div class="row">
             <div class="col-3 white">
-              <img class="logo-elearning"src="images/LOGO (1).png" alt="logo" />
-              <img class="logo-company"src="images/logo2.png" alt="logo" />
+              <img src="./images/logo-group-2.png" alt="logo" class="logo"/>
               <hr />
               <p>Taking Learning to the Next Level</p>
             </div>
@@ -54,9 +73,7 @@
       <hr class="header__hr"/>
      <nav class="navbar navbar-expand-lg navbar-dark menu bg-dark">
     <div class="container">
-        <img class="logo-elearning"src="images/LOGO (1).png" alt="logo" />
-        <img class="logo-company"src="images/logo2.png" alt="logo" /> 
-     
+       <img src="./images/logo-group.png" alt="logo" class="logo"/>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -79,44 +96,40 @@
     </div>
 
     <!-- Services we Provide Block -->
-    <!-- Yellow color -->
-    <div class="services services--yellow ">
+  <div class="services">
+      <!-- Yellow color -->
+    <div class="services--yellow ">
       <h2>Services We Provide</h2>
       <div class="container">
         <div class="row">
           <div class="col-3">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list-check" viewBox="0 0 16 16">
-            <path fill-rule="evenodd" d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3.854 2.146a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708L2 3.293l1.146-1.147a.5.5 0 0 1 .708 0zm0 4a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708L2 7.293l1.146-1.147a.5.5 0 0 1 .708 0zm0 4a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 0 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0z"/>
+            <svg class="icon">
+             <use xlink:href="#list-check"></use>
             </svg>
-            
             <h6>INSTRUCTIONAL DESIGN</h6>
             <hr/>
             <p>We provide full-service instructional design consulting. From standalone lessons to the series of courses, no job is too large or too small for us.</p>
           </div>
           <div class="col-3">
-           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-laptop" viewBox="0 0 16 16">
-           <path d="M13.5 3a.5.5 0 0 1 .5.5V11H2V3.5a.5.5 0 0 1 .5-.5h11zm-11-1A1.5 1.5 0 0 0 1 3.5V12h14V3.5A1.5 1.5 0 0 0 13.5 2h-11zM0 12.5h16a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5z"/>
+           <svg class="icon">
+            <use xlink:href="#pc-display"></use>
            </svg>
-           
            <h6>ELEARNING DEVELOPMENT</h6>
            <hr/>
            <p>The eLearning products we create feature deep learner engagement and ensure high knowledge transfer.</p>
           </div>
           <div class="col-3">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-phone" viewBox="0 0 16 16">
-  <path d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h6zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H5z"/>
-  <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
-</svg>
-
+            <svg class="icon">
+             <use xlink:href="#phone-landscape"></use>
+            </svg>
            <h6>MOBILE LEARNING</h6>
            <hr/>
            <p>Let us help you take your learning process anywhere your business may take you. Any place, any time, any device.</p>
           </div>
           <div class="col-3">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
-  <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
-</svg>
-
+            <svg class="icon">
+             <use xlink:href="#person-fill"></use>
+            </svg>
            <h6>INSTRUCTOR-LED TRAINING</h6>
            <hr/>
            <p>We are experts at developing a classroom curriculum that meets your business needs and exceeds even your highest expectations.</p>
@@ -126,22 +139,21 @@
     </div>
 
     <!-- Primary color -->
-    <div class="services services--primary ">
+    <div class="services--primary ">
       <h2>Services We Provide</h2>
       <div class="container">
         <div class="row">
           <div class="col-3">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list-check" viewBox="0 0 16 16">
-            <path fill-rule="evenodd" d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3.854 2.146a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708L2 3.293l1.146-1.147a.5.5 0 0 1 .708 0zm0 4a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708L2 7.293l1.146-1.147a.5.5 0 0 1 .708 0zm0 4a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 0 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0z"/>
+            <svg class="icon">
+             <use xlink:href="#list-check"></use>
             </svg>
-            
             <h6>INSTRUCTIONAL DESIGN</h6>
             <hr/>
             <p>We provide full-service instructional design consulting. From standalone lessons to the series of courses, no job is too large or too small for us.</p>
           </div>
           <div class="col-3">
-           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-laptop" viewBox="0 0 16 16">
-           <path d="M13.5 3a.5.5 0 0 1 .5.5V11H2V3.5a.5.5 0 0 1 .5-.5h11zm-11-1A1.5 1.5 0 0 0 1 3.5V12h14V3.5A1.5 1.5 0 0 0 13.5 2h-11zM0 12.5h16a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5z"/>
+           <svg class="icon">
+            <use xlink:href="#pc-display"></use>
            </svg>
            
            <h6>ELEARNING DEVELOPMENT</h6>
@@ -149,20 +161,17 @@
            <p>The eLearning products we create feature deep learner engagement and ensure high knowledge transfer.</p>
           </div>
           <div class="col-3">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-phone" viewBox="0 0 16 16">
-  <path d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h6zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H5z"/>
-  <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
-</svg>
-
+           <svg class="icon">
+             <use xlink:href="#phone-landscape"></use>
+            </svg>
            <h6>MOBILE LEARNING</h6>
            <hr/>
            <p>Let us help you take your learning process anywhere your business may take you. Any place, any time, any device.</p>
           </div>
           <div class="col-3">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
-  <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
-</svg>
-
+            <svg class="icon">
+             <use xlink:href="#person-fill"></use>
+            </svg>
            <h6>INSTRUCTOR-LED TRAINING</h6>
            <hr/>
            <p>We are experts at developing a classroom curriculum that meets your business needs and exceeds even your highest expectations.</p>
@@ -171,44 +180,39 @@
       </div>
     </div>
 
-    <!-- Yellow border -->
-    <div class="services services--primary-border ">
+    <!-- primary border -->
+    <div class="services--primary-border ">
       <h2>Services We Provide</h2>
       <div class="container">
         <div class="row">
           <div class="col-3">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list-check" viewBox="0 0 16 16">
-            <path fill-rule="evenodd" d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3.854 2.146a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708L2 3.293l1.146-1.147a.5.5 0 0 1 .708 0zm0 4a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708L2 7.293l1.146-1.147a.5.5 0 0 1 .708 0zm0 4a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 0 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0z"/>
+            <svg class="icon">
+             <use xlink:href="#list-check"></use>
             </svg>
-            
             <h6>INSTRUCTIONAL DESIGN</h6>
             <hr/>
             <p>We provide full-service instructional design consulting. From standalone lessons to the series of courses, no job is too large or too small for us.</p>
           </div>
           <div class="col-3">
-           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-laptop" viewBox="0 0 16 16">
-           <path d="M13.5 3a.5.5 0 0 1 .5.5V11H2V3.5a.5.5 0 0 1 .5-.5h11zm-11-1A1.5 1.5 0 0 0 1 3.5V12h14V3.5A1.5 1.5 0 0 0 13.5 2h-11zM0 12.5h16a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5z"/>
+          <svg class="icon">
+            <use xlink:href="#pc-display"></use>
            </svg>
-           
            <h6>ELEARNING DEVELOPMENT</h6>
            <hr/>
            <p>The eLearning products we create feature deep learner engagement and ensure high knowledge transfer.</p>
           </div>
           <div class="col-3">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-phone" viewBox="0 0 16 16">
-  <path d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h6zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H5z"/>
-  <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
-</svg>
-
+            <svg class="icon">
+             <use xlink:href="#phone-landscape"></use>
+            </svg>
            <h6>MOBILE LEARNING</h6>
            <hr/>
            <p>Let us help you take your learning process anywhere your business may take you. Any place, any time, any device.</p>
           </div>
           <div class="col-3">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
-  <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
-</svg>
-
+            <svg class="icon">
+             <use xlink:href="#person-fill"></use>
+            </svg>
            <h6>INSTRUCTOR-LED TRAINING</h6>
            <hr/>
            <p>We are experts at developing a classroom curriculum that meets your business needs and exceeds even your highest expectations.</p>
@@ -218,43 +222,38 @@
     </div>
 
     <!--Grey border -->
-    <div class="services services--grey-border ">
+    <div class="services--grey-border ">
       <h2>Services We Provide</h2>
       <div class="container">
         <div class="row">
           <div class="col-3">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list-check" viewBox="0 0 16 16">
-            <path fill-rule="evenodd" d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3.854 2.146a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708L2 3.293l1.146-1.147a.5.5 0 0 1 .708 0zm0 4a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708L2 7.293l1.146-1.147a.5.5 0 0 1 .708 0zm0 4a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 0 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0z"/>
+            <svg class="icon">
+             <use xlink:href="#list-check"></use>
             </svg>
-            
             <h6>INSTRUCTIONAL DESIGN</h6>
             <hr/>
             <p>We provide full-service instructional design consulting. From standalone lessons to the series of courses, no job is too large or too small for us.</p>
           </div>
           <div class="col-3">
-           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-laptop" viewBox="0 0 16 16">
-           <path d="M13.5 3a.5.5 0 0 1 .5.5V11H2V3.5a.5.5 0 0 1 .5-.5h11zm-11-1A1.5 1.5 0 0 0 1 3.5V12h14V3.5A1.5 1.5 0 0 0 13.5 2h-11zM0 12.5h16a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5z"/>
+           <svg class="icon">
+            <use xlink:href="#pc-display"></use>
            </svg>
-           
            <h6>ELEARNING DEVELOPMENT</h6>
            <hr/>
            <p>The eLearning products we create feature deep learner engagement and ensure high knowledge transfer.</p>
           </div>
           <div class="col-3">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-phone" viewBox="0 0 16 16">
-  <path d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h6zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H5z"/>
-  <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
-</svg>
-
+           <svg class="icon">
+             <use xlink:href="#phone-landscape"></use>
+            </svg>
            <h6>MOBILE LEARNING</h6>
            <hr/>
            <p>Let us help you take your learning process anywhere your business may take you. Any place, any time, any device.</p>
           </div>
           <div class="col-3">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
-  <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
-</svg>
-
+            <svg class="icon">
+             <use xlink:href="#person-fill"></use>
+            </svg>
            <h6>INSTRUCTOR-LED TRAINING</h6>
            <hr/>
            <p>We are experts at developing a classroom curriculum that meets your business needs and exceeds even your highest expectations.</p>
@@ -262,6 +261,8 @@
         </div>
       </div>
     </div>
+  </div>
+
   
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
   </body>

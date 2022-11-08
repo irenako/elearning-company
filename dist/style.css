@@ -11005,16 +11005,18 @@ body {
   padding: 3.125rem 15.25rem;
   text-align: center;
 }
-.services--yellow svg {
+.services--yellow .icon {
   background-color: #dccd8f;
   border: 0.0625rem solid #dccd8f;
+  fill: white;
 }
 .services--yellow hr {
   border: 0.1875rem solid #dccd8f;
 }
-.services--primary svg {
+.services--primary .icon {
   background-color: #3d948e;
   border: 0.0625rem solid #3d948e;
+  fill: white;
 }
 .services--primary hr {
   border: 0.1875rem solid #3d948e;
@@ -11023,6 +11025,7 @@ body {
   background-color: #f5f5f5;
   border: 0.1875rem solid #3d948e;
   color: #3d948e;
+  fill: #3d948e;
 }
 .services--primary-border hr {
   border: 0.1875rem solid #3d948e;
@@ -11031,6 +11034,7 @@ body {
   background-color: #f5f5f5;
   border: 0.1875rem solid #999b9a;
   color: #999b9a;
+  fill: #999b9a;
 }
 .services--grey-border hr {
   border: 0.1875rem solid #999b9a;
@@ -11042,7 +11046,7 @@ body {
   line-height: 3.75rem;
   padding-bottom: 3.125rem;
 }
-.services svg {
+.services .icon {
   width: 4.0625rem;
   height: 4.0625rem;
   margin-bottom: 1.875rem;
