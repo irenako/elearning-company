@@ -10988,17 +10988,54 @@ body {
   top: 209.36px;
 }
 
-.header__hr {
-  width: 75%;
-  margin: 0 auto;
-  height: 0.5rem;
-  border: 0.5rem solid #3d948e;
-}
-
 .header__navbar {
   display: inline-block;
   font-size: 0.8125rem;
   line-height: 1rem;
+}
+
+.instructional-design {
+  text-align: start;
+  padding-left: 14.375rem;
+  padding-right: 14.375rem;
+  padding-bottom: 8.75rem;
+}
+.instructional-design h2 {
+  color: #999b9a;
+  font-weight: 600;
+  font-size: 3.125rem;
+  line-height: 3.75rem;
+  padding-bottom: 3.125rem;
+  text-align: center;
+  padding-top: 3.125rem;
+  padding-bottom: 3.125rem;
+}
+.instructional-design h3 {
+  color: #424242;
+  font-weight: 400;
+  font-size: 1.875rem;
+  line-height: 2.225rem;
+}
+.instructional-design p {
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 150%;
+  color: #424242;
+  padding-bottom: 30px;
+}
+.instructional-design ul {
+  list-style: none;
+}
+.instructional-design ul li {
+  padding-right: 2rem;
+}
+.instructional-design ul li .icon {
+  position: absolute;
+  width: 1.625rem;
+  height: 1rem;
+}
+.instructional-design ul li p {
+  padding-left: 2.5rem;
 }
 
 .services {
@@ -11010,7 +11047,7 @@ body {
   border: 0.0625rem solid #dccd8f;
   fill: white;
 }
-.services--yellow hr {
+.services--yellow .services__break {
   border: 0.1875rem solid #dccd8f;
 }
 .services--primary .icon {
@@ -11018,7 +11055,7 @@ body {
   border: 0.0625rem solid #3d948e;
   fill: white;
 }
-.services--primary hr {
+.services--primary .services__break {
   border: 0.1875rem solid #3d948e;
 }
 .services--primary-border svg {
@@ -11027,7 +11064,7 @@ body {
   color: #3d948e;
   fill: #3d948e;
 }
-.services--primary-border hr {
+.services--primary-border .services__break {
   border: 0.1875rem solid #3d948e;
 }
 .services--grey-border svg {
@@ -11036,7 +11073,7 @@ body {
   color: #999b9a;
   fill: #999b9a;
 }
-.services--grey-border hr {
+.services--grey-border .services__break {
   border: 0.1875rem solid #999b9a;
 }
 .services h2 {
@@ -11053,7 +11090,7 @@ body {
   padding: 1rem;
   border-radius: 50%;
 }
-.services hr {
+.services .services__break {
   width: 2.2rem;
   margin: 0 auto;
   border-radius: 20%;
@@ -11064,15 +11101,19 @@ body {
   line-height: 1.2rem;
 }
 
+.container {
+  max-width: 100%;
+}
+
 .design-learning {
   background-image: url(../../images/bg-2.png);
   text-align: start;
-  padding-left: 15.3125rem;
-  padding-right: 15.3125rem;
+  width: 100%;
 }
 .design-learning .design-learning__text {
   padding-top: 90px;
   padding-bottom: 85px;
+  padding-left: 15.3125rem;
 }
 .design-learning .design-learning__text h2 {
   font-weight: 600;
@@ -11098,4 +11139,12 @@ body {
   margin-top: 1.5rem;
   display: flex;
   justify-content: end;
+  padding-right: 15.3125rem;
+}
+
+.break-hr {
+  width: 75%;
+  margin: 0 auto;
+  height: 0.5rem;
+  border: 0.5rem solid #3d948e;
 }/*# sourceMappingURL=style.css.map */

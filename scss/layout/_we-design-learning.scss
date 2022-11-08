@@ -1,14 +1,19 @@
 @use "../custom" as *;
 
+.container {
+  max-width: 100%;
+}
+
 .design-learning {
   background-image: url(../../images/bg-2.png);
   text-align: start;
-  padding-left: 15.3125rem;
-  padding-right: 15.3125rem;
+  width: 100%;
 
   .design-learning__text {
     padding-top: 90px;
     padding-bottom: 85px;
+    padding-left: 15.3125rem;
+
     h2 {
       font-weight: 600;
       font-size: 4.6875rem;
@@ -34,5 +39,6 @@
     margin-top: 1.5rem;
     display: flex;
     justify-content: end;
+    padding-right: 15.3125rem;
   }
 }
