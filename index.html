@@ -9,29 +9,6 @@
     <title>Document</title>
   </head>
   <body>
-    <!-- SVG Sprite -->
-<svg width="0" height="0" class="hidden" >
-  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="person-fill">
-    <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"></path>
-  </symbol>
-  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="pc-display">
-    <path d="M8 1a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1V1Zm1 13.5a.5.5 0 1 0 1 0 .5.5 0 0 0-1 0Zm2 0a.5.5 0 1 0 1 0 .5.5 0 0 0-1 0ZM9.5 1a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5ZM9 3.5a.5.5 0 0 0 .5.5h5a.5.5 0 0 0 0-1h-5a.5.5 0 0 0-.5.5ZM1.5 2A1.5 1.5 0 0 0 0 3.5v7A1.5 1.5 0 0 0 1.5 12H6v2h-.5a.5.5 0 0 0 0 1H7v-4H1.5a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .5-.5H7V2H1.5Z"></path>
-  </symbol>
-  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="list-check">
-    <path d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3.854 2.146a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708L2 3.293l1.146-1.147a.5.5 0 0 1 .708 0zm0 4a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708L2 7.293l1.146-1.147a.5.5 0 0 1 .708 0zm0 4a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 0 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0z"></path>
-  </symbol>
-  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="phone-landscape">
-    <path d="M1 4.5a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v6a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-6zm-1 6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-6a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v6z"></path>
-    <path d="M14 7.5a1 1 0 1 0-2 0 1 1 0 0 0 2 0z"></path>
-  </symbol>
-  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 34 24" id="tick">
-    <path d="M4 10.5L12.8037 19.3037C13.19 19.69 13.8148 19.6948 14.2069 19.3145L30 4" stroke="#E7D08C" stroke-width="7" stroke-linecap="round"></path>
-  </symbol>
-  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="envelope">
-    <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"></path>
-  </symbol>
-</svg>
-
     <!-- HEADER -->
     <div class="header">
         <div class="header__container container">
@@ -71,7 +48,7 @@
             <div class="col-3 menu-7">
               <div class="text">
                 <a class="img-links__1" href="#"><svg class="icon">
-                <use xlink:href="#envelope"></use>
+                <use xlink:href="sprites.svg#envelope"></use>
                 </svg>
                 <br/>
               Contact us</a>
@@ -121,7 +98,7 @@
         <div class="row">
           <div class="col-3">
             <svg class="icon">
-             <use xlink:href="#list-check"></use>
+             <use xlink:href="sprites.svg#list-check"></use>
             </svg>
             <h6>INSTRUCTIONAL DESIGN</h6>
             <div class="services__break"></div>
@@ -129,7 +106,7 @@
           </div>
           <div class="col-3">
            <svg class="icon">
-            <use xlink:href="#pc-display"></use>
+            <use xlink:href="sprites.svg#pc-display"></use>
            </svg>
            <h6>ELEARNING DEVELOPMENT</h6>
            <div class="services__break"></div>
@@ -137,7 +114,7 @@
           </div>
           <div class="col-3">
             <svg class="icon">
-             <use xlink:href="#phone-landscape"></use>
+             <use xlink:href="sprites.svg#phone-landscape"></use>
             </svg>
            <h6>MOBILE LEARNING</h6>
            <div class="services__break"></div>
@@ -145,7 +122,7 @@
           </div>
           <div class="col-3">
             <svg class="icon">
-             <use xlink:href="#person-fill"></use>
+             <use xlink:href="sprites.svg#person-fill"></use>
             </svg>
            <h6>INSTRUCTOR-LED TRAINING</h6>
            <div class="services__break"></div>
@@ -162,7 +139,7 @@
         <div class="row">
           <div class="col-3">
             <svg class="icon">
-             <use xlink:href="#list-check"></use>
+             <use xlink:href="sprites.svg#list-check"></use>
             </svg>
             <h6>INSTRUCTIONAL DESIGN</h6>
             <div class="services__break"></div>
@@ -170,7 +147,7 @@
           </div>
           <div class="col-3">
            <svg class="icon">
-            <use xlink:href="#pc-display"></use>
+            <use xlink:href="sprites.svg#pc-display"></use>
            </svg>
            
            <h6>ELEARNING DEVELOPMENT</h6>
@@ -179,7 +156,7 @@
           </div>
           <div class="col-3">
            <svg class="icon">
-             <use xlink:href="#phone-landscape"></use>
+             <use xlink:href="sprites.svg#phone-landscape"></use>
             </svg>
            <h6>MOBILE LEARNING</h6>
            <div class="services__break"></div>
@@ -187,7 +164,7 @@
           </div>
           <div class="col-3">
             <svg class="icon">
-             <use xlink:href="#person-fill"></use>
+             <use xlink:href="sprites.svg#person-fill"></use>
             </svg>
            <h6>INSTRUCTOR-LED TRAINING</h6>
            <div class="services__break"></div>
@@ -204,7 +181,7 @@
         <div class="row">
           <div class="col-3">
             <svg class="icon">
-             <use xlink:href="#list-check"></use>
+             <use xlink:href="sprites.svg#list-check"></use>
             </svg>
             <h6>INSTRUCTIONAL DESIGN</h6>
             <div class="services__break"></div>
@@ -212,7 +189,7 @@
           </div>
           <div class="col-3">
           <svg class="icon">
-            <use xlink:href="#pc-display"></use>
+            <use xlink:href="sprites.svg#pc-display"></use>
            </svg>
            <h6>ELEARNING DEVELOPMENT</h6>
            <div class="services__break"></div>
@@ -220,7 +197,7 @@
           </div>
           <div class="col-3">
             <svg class="icon">
-             <use xlink:href="#phone-landscape"></use>
+             <use xlink:href="sprites.svg#phone-landscape"></use>
             </svg>
            <h6>MOBILE LEARNING</h6>
            <div class="services__break"></div>
@@ -228,7 +205,7 @@
           </div>
           <div class="col-3">
             <svg class="icon">
-             <use xlink:href="#person-fill"></use>
+             <use xlink:href="sprites.svg#person-fill"></use>
             </svg>
            <h6>INSTRUCTOR-LED TRAINING</h6>
            <div class="services__break"></div>
@@ -245,7 +222,7 @@
         <div class="row">
           <div class="col-3">
             <svg class="icon">
-             <use xlink:href="#list-check"></use>
+             <use xlink:href="sprites.svg#list-check"></use>
             </svg>
             <h6>INSTRUCTIONAL DESIGN</h6>
             <div class="services__break"></div>
@@ -253,7 +230,7 @@
           </div>
           <div class="col-3">
            <svg class="icon">
-            <use xlink:href="#pc-display"></use>
+            <use xlink:href="sprites.svg#pc-display"></use>
            </svg>
            <h6>ELEARNING DEVELOPMENT</h6>
            <div class="services__break"></div>
@@ -261,7 +238,7 @@
           </div>
           <div class="col-3">
            <svg class="icon">
-             <use xlink:href="#phone-landscape"></use>
+             <use xlink:href="sprites.svg#phone-landscape"></use>
             </svg>
            <h6>MOBILE LEARNING</h6>
            <div class="services__break"></div>
@@ -269,7 +246,7 @@
           </div>
           <div class="col-3">
             <svg class="icon">
-             <use xlink:href="#person-fill"></use>
+             <use xlink:href="sprites.svg#person-fill"></use>
             </svg>
            <h6>INSTRUCTOR-LED TRAINING</h6>
            <div class="services__break"></div>
@@ -311,19 +288,19 @@
     <ul>
       <li>
         <svg class="instructional-design__text--icon icon">
-         <use xlink:href="#tick"></use>
+         <use xlink:href="sprites.svg#tick"></use>
         </svg>
         <p>Each project requires a unique approach, and we are ready for the challenge</p>
       </li>
       <li>
         <svg class="icon">
-         <use xlink:href="#tick"></use>
+         <use xlink:href="sprites.svg#tick"></use>
         </svg>
         <p>Our expertise in the training and development industry will make your project a success</p>
       </li>
       <li>
         <svg class="icon">
-         <use xlink:href="#tick"></use>
+         <use xlink:href="sprites.svg#tick"></use>
         </svg>
         <p>Your goals and deadlines are our priority</p>
       </li>
@@ -336,19 +313,19 @@
     <ul>
       <li>
         <svg class="icon">
-         <use xlink:href="#tick"></use>
+         <use xlink:href="sprites.svg#tick"></use>
         </svg>
         <p>We start each project with a careful analysiys of your learning needs</p>
       </li>
       <li>
         <svg class="icon">
-         <use xlink:href="#tick"></use>
+         <use xlink:href="sprites.svg#tick"></use>
         </svg>
         <p>We constantly look for ways to save your time and money while exceeding your expectations</p>
       </li>
       <li>
         <svg class="icon">
-         <use xlink:href="#tick"></use>
+         <use xlink:href="sprites.svg#tick"></use>
         </svg>
         <p>We don't stop working until you are satisfied with the products we deliver</p>
       </li>
