@@ -13,7 +13,7 @@
       padding: 0;
       margin: 0;
 
-      .col-3 {
+      .col-lg-3 {
         width: 237.75px;
         height: 237.75px;
         text-align: center;
@@ -35,6 +35,7 @@
 
       .white {
         background-color: $white;
+        padding: 0;
 
         img {
           padding-top: 25%;
