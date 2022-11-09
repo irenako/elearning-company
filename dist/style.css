@@ -11055,51 +11055,86 @@ body {
   padding: 1.6875rem 0;
 }
 
-.header__menu {
-  background-image: url("../../images/background-menu.png");
-  max-width: 1440px;
-  max-height: 681px;
+.header {
+  width: 100%;
+  background-image: url(../../images/background-menu.png);
 }
-.header__menu a,
-.header__menu a:visited {
-  color: #fff;
-  text-decoration: none;
-  z-index: 1;
+.header .header__container {
+  width: 68%;
+  padding-top: 6.421875rem;
+  padding-bottom: 6.421875rem;
 }
-.header__menu ul {
+.header .header__container .row {
   padding: 0;
   margin: 0;
 }
-.header__menu ul li {
+.header .header__container .row .col-3 {
+  width: 237.75px;
+  height: 237.75px;
+  text-align: center;
   padding: 0;
-  margin: 0;
 }
-.header__menu .container {
-  padding: 6.421875rem 15.265625rem;
-  position: relative;
-}
-.header__menu .white {
-  background-color: #fff;
-}
-.header__menu .background {
-  display: inline;
-}
-.header__menu .img-links-1 {
-  font-weight: 400;
+.header .header__container .row .col-3 .text {
+  font-weight: 300;
   font-size: 1.5rem;
   line-height: 1.8125rem;
-  position: absolute;
-  text-align: center;
-  width: 91px;
-  height: 29px;
-  left: 526.22px;
-  top: 209.36px;
+  padding-top: 40%;
+  width: 70%;
+  margin: 0 auto;
 }
-
-.header__navbar {
-  display: inline-block;
-  font-size: 0.8125rem;
-  line-height: 1rem;
+.header .header__container .row .col-3 .text a,
+.header .header__container .row .col-3 .text a:visited {
+  color: #fff;
+  text-decoration: none;
+}
+.header .header__container .row .white {
+  background-color: #fff;
+}
+.header .header__container .row .white img {
+  padding-top: 25%;
+  padding-bottom: 0.3125rem;
+}
+.header .header__container .row .white hr {
+  background-color: #dccd8f;
+  width: 75%;
+  margin: 0 auto;
+  border: 0.0625rem solid #dccd8f;
+}
+.header .header__container .row .white p {
+  padding-top: 1rem;
+  font-weight: 400;
+  font-size: 0.9rem;
+  line-height: 1.25rem;
+  text-align: center;
+  color: #424242;
+  width: 50%;
+  margin: 0 auto;
+}
+.header .header__container .row .menu-1 {
+  background-image: url(../../images/menu-1.png);
+}
+.header .header__container .row .menu-2 {
+  background-image: url(../../images/menu-2.png);
+}
+.header .header__container .row .menu-3 {
+  background-image: url(../../images/menu-3.png);
+}
+.header .header__container .row .menu-4 {
+  background-image: url(../../images/menu-4.png);
+}
+.header .header__container .row .menu-5 {
+  background-image: url(../../images/menu-5.png);
+}
+.header .header__container .row .menu-6 {
+  background-image: url(../../images/menu-6.png);
+}
+.header .header__container .row .menu-7 {
+  background-color: #3d948e;
+}
+.header .header__container .row .menu-7 svg {
+  fill: #fff;
+  width: 4rem;
+  height: 3rem;
 }
 
 .instructional-design {
@@ -11264,4 +11299,14 @@ body {
   margin: 0 auto;
   height: 0.5rem;
   border: 0.5rem solid #3d948e;
+}
+
+nav .container {
+  width: 66%;
+  font-weight: 100;
+  font-size: 13px;
+  line-height: 16px;
+}
+nav .container .nav-link {
+  color: #ffffff;
 }/*# sourceMappingURL=style.css.map */

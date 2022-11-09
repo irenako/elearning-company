@@ -1,0 +1,13 @@
+@use "../custom" as *;
+
+nav {
+  .container {
+    width: 66%;
+    font-weight: 100;
+    font-size: 13px;
+    line-height: 16px;
+    .nav-link {
+      color: #ffffff;
+    }
+  }
+}
